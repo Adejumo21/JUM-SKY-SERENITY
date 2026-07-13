@@ -1,113 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adejumo's personal website</title>
-    <link rel="stylesheet" href="index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    body {
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
-    }
-
     .scroll-container {
       position: relative;
       width: 100%;
       height: 100px;
       overflow: hidden;
-      background: #222;
+      background: #090b14;
       display: flex;
       align-items: center;
+      justify-content: center;
     }
     .scrolling-text {
       position: absolute;
       white-space: nowrap;
-      font-size: 2em;
+      font-size: 1.8em;
       color: #12e659;
       animation: scroll-left 18s linear infinite;
+      letter-spacing: 1px;
     }
-
     @keyframes scroll-left {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
   </style>
 </head>
 <body>
-    <div class="scroll-container">
+  <div class="scroll-container">
     <div class="scrolling-text">WELCOME TO ADEJUMO WORLD; YOUR VISION, RENDERED WITH SERENITY.</div>
   </div>
-  <header>
-    <img src="IMG_5774.JPG"  width="600" height="150"  alt="logo" class="site-logo">
-     <h1 style="text-align: center;">Welcome to Adejumo's World</h1>
-     
+
+  <header id="top">
+    <img src="IMG_5774.JPG" alt="Adejumo portrait" class="site-logo" loading="lazy">
+    <h1>Welcome to Adejumo's World</h1>
+    <p class="hero-subtitle">Designing digital experiences that feel alive, elegant, and easy to use.</p>
+    <p class="intro-text">Creative web solutions, memorable brand experiences, and bold storytelling from Lagos State.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="cta-button">Work with me</a>
+      <a href="#portfolio" class="cta-button secondary">See my work</a>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation menu">
+      <i class="fas fa-bars"></i>
+    </button>
     <nav class="navbar">
       <ul class="nav-list">
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#process">Process</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  
-  <div class="flower-banner">
-</div>
+
   <section id="about">
     <h2>About Me</h2>
     <p>Hello! I'm Adejumo Isiaq, a passionate web developer from Lagos State, Nigeria. I love building things that inspire and connect people.</p>
-    <p>As a developer, I'm a problem-solver and a builder. primarily function is to translate ideas and requirements into functional software and systems.</p>
-    <p>As a creator, innovator...I take concept, whether its a piece of art, a product, or a story and i bring it to life. This is a part of me that is driven by passion and the desire for self-expression. I focused on the user or the audience, striving to build something that is not only functional but engaging, beautiful and meaningful.</p>
-    <div class=" about-image">
+    <p>As a developer, I'm a problem-solver and a builder. My primary role is to translate ideas and requirements into functional software and systems.</p>
+    <p>As a creator, I take concepts—whether it's a piece of art, a product, or a story—and bring them to life. I focus on the audience, designing experiences that are engaging, beautiful, and meaningful.</p>
+    <div class="about-image">
       <img src="ISIAQ WH.jpg" alt="Adejumo Isiaq">
     </div>
-    <P style="text-align: center;">ADEJUMO</P>
-    
+    <p class="about-name">ADEJUMO</p>
   </section>
+
+  <section id="services">
+    <h2>What I Do</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Modern websites built with performance and user experience in mind.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-palette"></i>
+        <h3>UI / UX Design</h3>
+        <p>Clean, polished interfaces that make every interaction feel effortless.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-bolt"></i>
+        <h3>Brand Growth</h3>
+        <p>Creative direction and digital presence that help your story stand out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <h2>Expertise</h2>
+    <div class="expertise-bars">
+      <div class="expertise-item">
+        <div class="expertise-label"><span>HTML / CSS</span><strong>70%</strong></div>
+        <div class="bar"><div class="bar-fill" data-fill="70"></div></div>
+      </div>
+      <div class="expertise-item">
+        <div class="expertise-label"><span>JavaScript</span><strong>40%</strong></div>
+        <div class="bar"><div class="bar-fill" data-fill="40"></div></div>
+      </div>
+      <div class="expertise-item">
+        <div class="expertise-label"><span>UI / UX</span><strong>25%</strong></div>
+        <div class="bar"><div class="bar-fill" data-fill="25"></div></div>
+      </div>
+      <div class="expertise-item">
+        <div class="expertise-label"><span>React / Frameworks</span><strong>10%</strong></div>
+        <div class="bar"><div class="bar-fill" data-fill="10"></div></div>
+      </div>
+    </div>
+  </section>
+
   <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="projects">
       <div class="project">
-        <h3>MY PASSION</h3>
-        <p></p>
+        <h3>My Passion</h3>
+        <p>I build websites, visual stories, and digital projects that reflect the vision of every client.</p>
       </div>
       <div class="project">
-        <h3>MY GALLERY</h3>
-        <p></p>
+        <h3>My Gallery</h3>
+        <p>Selected works and creative moments from the world of Adejumo.</p>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="IMG_5774.JPG" alt="Project sample 1">
+        <span>Design concept</span>
+      </div>
+      <div class="gallery-item">
+        <img src="ISIAQ WH.jpg" alt="Project sample 2">
+        <span>Brand identity</span>
+      </div>
+      <div class="gallery-item">
+        <img src="PNvFWOI-cool-flower-backgrounds.jpg" alt="Project sample 3">
+        <span>Visual creation</span>
       </div>
     </div>
   </section>
-   <section id="contact">
+
+  <section id="process">
+    <h2>How I work</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <span>1</span>
+        <h3>Discover</h3>
+        <p>We clarify your goals, audience, and story before design begins.</p>
+      </div>
+      <div class="process-step">
+        <span>2</span>
+        <h3>Design</h3>
+        <p>Bold layouts, polished visuals, and purposeful UX come together here.</p>
+      </div>
+      <div class="process-step">
+        <span>3</span>
+        <h3>Build</h3>
+        <p>I translate the design into a fast, responsive website with clean code.</p>
+      </div>
+      <div class="process-step">
+        <span>4</span>
+        <h3>Launch</h3>
+        <p>Final checks, performance tuning, and a smooth delivery ready to share.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="question">How do I request a project?</button>
+        <div class="answer">Send a message via the contact form or the WhatsApp link. Include project details, goals, and your timeline.</div>
+      </div>
+      <div class="faq-item">
+        <button class="question">What are your rates?</button>
+        <div class="answer">Rates depend on scope and deliverables. Contact me with your project brief and I'll provide a tailored quote.</div>
+      </div>
+      <div class="faq-item">
+        <button class="question">What is your process?</button>
+        <div class="answer">Discovery → Design → Development → Testing → Delivery. You'll get regular updates and review checkpoints.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
     <h2>Contact Me</h2>
     <div class="social-connect">
-  <p>Reach out and let's create together:</p>
-  <a href="https://www.instagram.com/jumskyserenity_farm/" target="_blank" class="social-icon instagram">
-    <i class="fab fa-instagram"></i> Instagram
-  </a>
-  <a href="https://www.tiktok.com/@dejumo16" target="_blank" class="social-icon tiktok">
-    <i class="fab fa-tiktok"></i> TikTok 
-  </a>
-    <a href="http://wa.me/2349038358762" target="_blank" class="social-icon whatsapp">
-    <i class="fab fa-whatsapp"></i>  WhatsApp
-    </a>
-  <br>
-  <br>
-</div>
-    <form>
-      <input type="email" placeholder="Adejumoisiaq2000@gmail.com" required />
-      <textarea placeholder="Your Message" required></textarea>
-      </textarea>
-      <button type="submit">Send</button>
+      <p>Reach out and let's create together:</p>
+      <a href="https://www.instagram.com/jumskyserenity_farm/" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@dejumo16" target="_blank" class="social-icon tiktok">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+      <a href="http://wa.me/2349038358762" target="_blank" class="social-icon whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+    <form class="contact-form">
+      <label>
+        Name
+        <input type="text" placeholder="Your name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" placeholder="your.email@example.com" required>
+      </label>
+      <label>
+        Message
+        <textarea placeholder="Tell me about your project" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
     </form>
-    
   </section>
-   <footer>
+
+  <footer>
     <p>© 2026 Adejumo. All rights reserved.</p>
-   </footer>
-    
+    <a href="#top" class="back-to-top">Back to top</a>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.faq .question').forEach(function(q) {
+        q.addEventListener('click', function() {
+          q.classList.toggle('open');
+          var ans = q.nextElementSibling;
+          if (ans.style.maxHeight) { ans.style.maxHeight = null; }
+          else { ans.style.maxHeight = ans.scrollHeight + 'px'; }
+        });
+      });
+
+      document.querySelectorAll('.bar-fill').forEach(function(fill, index) {
+        var pct = fill.dataset.fill || '0';
+        fill.style.width = '0%';
+        setTimeout(function() {
+          fill.style.width = pct + '%';
+        }, 200 + index * 120);
+      });
+
+      var menuToggle = document.querySelector('.menu-toggle');
+      var navList = document.querySelector('.nav-list');
+      if (menuToggle && navList) {
+        menuToggle.addEventListener('click', function() {
+          var isOpen = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!isOpen));
+          navList.classList.toggle('open');
+        });
+      }
+    });
+  </script>
 </body>
 </html>
